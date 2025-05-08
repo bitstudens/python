@@ -3,10 +3,10 @@ import requests
 
 # Configuration
 CSV_FILE = 'gclid.csv'  # Path to your CSV file
-URL = 'https://costs.mobwizardstech.com/api/v1/conversion/'
-CAMPAIGN_ID = '2837959746'
+URL = ''
+CAMPAIGN_ID = ''
 CONSENT = 0
-BEARER_TOKEN = '23485a21b7e738d4ddead7458239577997a2e2ac'  # <-- Replace with your actual token!
+BEARER_TOKEN = ''  # <-- Replace with your actual token!
 
 def read_gclids(file_path):
     gclids = []
