@@ -45,9 +45,12 @@ plt.title('Top 10 Countries by COVID-19 Deaths')
 plt.gca().invert_yaxis()
 plt.show()
 
+confirmed_numeric = [safe_convert(i[1]) for i in top10_confirmed]
+deaths_numeric = [safe_convert(i[1]) for i in top10deaths]
+contries_numeric = [i[0] for i in top10_confirmed]
 
 plt.figure(figsize=(10, 6))
-plt.scatter(top10_confirmed, top10deaths, alpha=0.7)
+plt.scatter(confirmed_numeric, deaths_numeric, alpha=0.7)
 plt.xlabel('Confirmed Cases')
 plt.ylabel('Deaths')
 plt.title('Confirmed Cases vs Deaths for Top 10 Countries')
